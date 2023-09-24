@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { MainPageAsync as MainPage } from "./pages/MainPage/MainPageAsync";
 import { AboutPageAsync as AboutPage } from "./pages/AboutPage/AboutPageAsync";
 import { Suspense } from "react";
+import { Counter } from "./components/Counter";
+import "./index.scss";
 
 function App() {
   return (
@@ -15,7 +17,7 @@ function App() {
           <Route path={'/about'} element={<AboutPage />} />
         </Routes>
       </Suspense>
-      
+      <Counter />
     </div>
   )
 }
