@@ -4,11 +4,11 @@ import { MainPageAsync as MainPage } from "./pages/MainPage/MainPageAsync";
 import { AboutPageAsync as AboutPage } from "./pages/AboutPage/AboutPageAsync";
 import { Suspense } from "react";
 import { Counter } from "./components/Counter";
-import "./index.scss";
+import "./styles/index.scss";
 
 function App() {
   return (
-    <div className="app">
+    <div className="app light">
       <Link to={'/'}>На главную</Link>
       <Link to={'/about'}>О странце</Link>
       <Suspense fallback={<div>Loading...</div>}>
