@@ -1,0 +1,14 @@
+.navbar {
+  width: 100%;
+  min-height: var(--navbar-height);
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: var(--inverted-bg-color);
+}
+
+.list {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10px
+}

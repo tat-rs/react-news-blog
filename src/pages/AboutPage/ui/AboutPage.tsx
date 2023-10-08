@@ -1,7 +1,7 @@
 const AboutPage = () => {
   return (
     <div>
-      <h1>О странце</h1>
+      <h1>О странице</h1>
     </div>
   )
 }
