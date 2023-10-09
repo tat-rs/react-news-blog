@@ -1,4 +1,6 @@
 .navbar {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   min-height: var(--navbar-height);
   box-sizing: border-box;
