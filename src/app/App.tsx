@@ -1,9 +1,9 @@
 import { useTheme } from "./providers/ThemeProvider";
 import { classNames } from "shared/lib/classNames/classNames";
 import { AppRouter } from "./router";
-import "./styles/index.scss";
-import { AppLink, AppLinkThemes } from "shared/ui/AppLink/AppLink";
 import { Navbar } from "widgets/Navbar";
+import { Button } from "shared/ui/Button/Button";
+import "./styles/index.scss";
 
 const App = () => {
   const {theme, toggleTheme} = useTheme();
@@ -12,7 +12,9 @@ const App = () => {
     <div className={classNames('app', {}, [theme])}>
       <Navbar />
       <AppRouter />
-      <button type="button" onClick={toggleTheme}>TOGGLE</button>
+      <Button type="button" onClick={toggleTheme}>
+        Toggle
+      </Button>
     </div>
   )
 }
