@@ -1,15 +1,17 @@
 .navbar {
+  box-sizing: border-box;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: end;
   width: 100%;
-  min-height: var(--navbar-height);
+  height: var(--navbar-height);
+  padding: 10px 20px;
   box-sizing: border-box;
   background-color: var(--inverted-bg-color);
 }
 
 .list {
   display: flex;
-  justify-content: end;
   align-items: center;
   gap: 10px
 }
