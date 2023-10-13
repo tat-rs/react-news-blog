@@ -1,8 +1,7 @@
-import { RoutePaths } from "shared/config/routeConfig/routeConfig"
-import { classNames } from "shared/lib/classNames/classNames"
-import { AppLink, AppLinkThemes } from "shared/ui/AppLink/AppLink"
-import cls from './Navbar.module.scss'
-import { ThemeSwitcher } from "widgets/ThemeSwitcher"
+import { RoutePaths } from "shared/config/routeConfig/routeConfig";
+import { classNames } from "shared/lib/classNames/classNames";
+import { AppLink, AppLinkThemes } from "shared/ui/AppLink/AppLink";
+import cls from './Navbar.module.scss';
 
 export const NavLinks = [
   {
@@ -23,7 +22,6 @@ const Navbar = ({className}: NavbarProps) => {
   return (
     <div>
       <nav className={classNames(cls.navbar, {}, [className])}>
-        <ThemeSwitcher />
         <ul className={classNames(cls.list)}>
           {
             NavLinks.map(({text, path}) => (
