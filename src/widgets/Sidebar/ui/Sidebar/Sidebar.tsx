@@ -3,6 +3,8 @@ import cls from './Sidebar.module.scss';
 import { useState } from "react";
 import { Button } from "shared/ui/Button/Button";
 import { ThemeSwitcher } from "widgets/ThemeSwitcher";
+import { t } from "i18next";
+import i18n from "shared/config/i18n/i18n";
 
 export interface SidebarProps {
   className?: string
