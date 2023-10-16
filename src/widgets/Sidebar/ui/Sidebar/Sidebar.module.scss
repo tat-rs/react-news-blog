@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   min-height: calc(100vh - var(--navbar-height));
   width: var(--sidebar-width);
   background-color: var(--inverted-bg-color);
@@ -15,7 +16,19 @@
   width: var(--sidebar-width-collapsed);
 }
 
-.switcher {
-  position: absolute;
-  bottom: 30px;
+.collapsedBtn {
+  color: var(--inverted-secondary-color);
+}
+
+
+.switchers {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.languageSwitcher {
+  color: var(--inverted-secondary-color);
 }

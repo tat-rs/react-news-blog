@@ -2,23 +2,26 @@ import { RoutePaths } from "shared/config/routeConfig/routeConfig";
 import { classNames } from "shared/lib/classNames/classNames";
 import { AppLink, AppLinkThemes } from "shared/ui/AppLink/AppLink";
 import cls from './Navbar.module.scss';
-
-export const NavLinks = [
-  {
-    text: 'На главную',
-    path: RoutePaths.main
-  },
-  {
-    text: 'О странице',
-    path: RoutePaths.about
-  }
-]
+import { useTranslation } from "react-i18next";
 
 export type NavbarProps = {
   className?: string
 }
 
 const Navbar = ({className}: NavbarProps) => {
+  const {t} = useTranslation();
+
+  const NavLinks = [
+    {
+      text: t('На главную'),
+      path: RoutePaths.main
+    },
+    {
+      text: t('О странице'),
+      path: RoutePaths.about
+    }
+  ]
+
   return (
     <div>
       <nav className={classNames(cls.navbar, {}, [className])}>
