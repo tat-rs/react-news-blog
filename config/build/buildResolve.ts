@@ -8,7 +8,7 @@ export function buildResolve(options: BuildOptions):webpack.ResolveOptions {
     mainFiles: ['index'],
     alias: {},
     modules: [
-      options.paths.src, 'node_modules'
-    ]
-  }
+      options.paths.src, 'node_modules',
+    ],
+  };
 }
