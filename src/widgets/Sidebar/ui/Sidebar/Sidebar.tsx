@@ -31,7 +31,6 @@ export const Sidebar = ({ className }: SidebarProps) => {
         <ThemeSwitcher className={classNames(cls.switcher, {}, [])} />
         <LanguageSwitcher className={cls.languageSwitcher} />
       </div>
-
     </div>
   );
 };
