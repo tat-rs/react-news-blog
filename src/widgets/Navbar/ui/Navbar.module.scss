@@ -6,12 +6,11 @@
   width: 100%;
   height: var(--navbar-height);
   padding: 10px 20px;
-  box-sizing: border-box;
   background-color: var(--inverted-bg-color);
 }
 
 .list {
   display: flex;
   align-items: center;
-  gap: 10px
+  gap: 10px;
 }
